@@ -1,0 +1,39 @@
+.admin-grid {
+	display: grid;
+	gap: var(--space-4);
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
+}
+
+.stat-card h3 {
+	font-size: var(--fs-14);
+	color: var(--muted);
+	margin: 0 0 6px
+}
+
+.stat-card p {
+	font-size: var(--fs-32);
+	margin: 0
+}
+
+.admin-actions {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap
+}
+
+.manager .card {
+	margin-top: var(--space-4)
+}
+
+.question-list .table td:nth-child(1) {
+	width: 80px
+}
+
+.quiz-builder .question-pick {
+	display: grid;
+	gap: 8px
+}
+
+.quiz-builder .question-pick .quiz-option {
+	align-items: flex-start
+}

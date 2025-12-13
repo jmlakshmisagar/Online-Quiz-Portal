@@ -1,0 +1,26 @@
+.fade-in {
+  animation: fade .5s ease forwards;
+}
+
+.slide-up {
+  animation: slideUp .5s ease forwards;
+}
+
+.hover-raise {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.hover-raise:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.4);
+}
+
+@keyframes fade {
+  from { opacity: 0 }
+  to   { opacity: 1 }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0 }
+  to   { transform: translateY(0); opacity: 1 }
+}
